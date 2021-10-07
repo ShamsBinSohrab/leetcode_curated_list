@@ -1,4 +1,4 @@
-/** https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ */
+/** Problem https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ */
 public class BuySellStock {
 
   public int maxProfit(int[] prices) {
