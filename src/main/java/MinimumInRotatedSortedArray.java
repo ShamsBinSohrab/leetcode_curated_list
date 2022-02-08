@@ -1,8 +1,6 @@
 /** Problem: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/ */
 public class MinimumInRotatedSortedArray {
-
   public int findMin(int[] nums) {
-    if (nums.length == 1) return nums[0];
     int left = 0;
     int right = nums.length - 1;
     while (left < right) {

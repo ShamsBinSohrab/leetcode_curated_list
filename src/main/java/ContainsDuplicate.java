@@ -2,7 +2,6 @@ import java.util.Arrays;
 
 /** Problem: https://leetcode.com/problems/contains-duplicate/ */
 public class ContainsDuplicate {
-
   public boolean containsDuplicate(int[] nums) {
     Arrays.sort(nums);
     for (int i = 1; i < nums.length; i++) {
