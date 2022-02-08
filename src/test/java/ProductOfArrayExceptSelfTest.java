@@ -1,19 +1,18 @@
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.assertArrayEquals;
 
-class ProductOfArrayExceptSelfTest {
+import junit.framework.TestCase;
+
+public class ProductOfArrayExceptSelfTest extends TestCase {
 
   private static final ProductOfArrayExceptSelf solution = new ProductOfArrayExceptSelf();
 
-  @Test
-  void test1() {
+  public void test1() {
     var nums = new int[] {1, 2, 3, 4};
-    Assertions.assertArrayEquals(new int[] {24, 12, 8, 6}, solution.productExceptSelf(nums));
+    assertArrayEquals(new int[] {24, 12, 8, 6}, solution.productExceptSelf(nums));
   }
 
-  @Test
-  void test2() {
+  public void test2() {
     var nums = new int[] {-1, 1, 0, -3, 3};
-    Assertions.assertArrayEquals(new int[] {0, 0, 9, 0, 0}, solution.productExceptSelf(nums));
+    assertArrayEquals(new int[] {0, 0, 9, 0, 0}, solution.productExceptSelf(nums));
   }
 }
